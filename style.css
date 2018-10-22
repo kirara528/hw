@@ -44,6 +44,7 @@ header {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  text-align: center;
   color: #fff;
   padding: 100px 0;
   position: relative;
@@ -62,10 +63,9 @@ header {
 }
 
 .title {
-  font-size: 58px;
+  font-size: 64px;
   font-family: 'Dancing Script', cursive;
   font-weight: lighter;
-  margin-left: 60px;
   text-shadow: #B39B9B 2px 2px 0px;
   position: relative;
   z-index: 3;
@@ -93,7 +93,6 @@ header {
   width: 200px;
   font-size: 40px;
   border-radius: 50%;
-  margin-left: 150px;
   color: #fff;
   cursor: pointer;
   position: relative;
@@ -104,7 +103,9 @@ header {
 .book {
   background-color: rgba(246, 169, 151, .5);
   border-color: rgba(246, 169, 151, .5);
+  margin-right: 150px;
 }
+
 
 .book:hover {
   background-color: rgb(246,169, 151);
@@ -310,6 +311,10 @@ footer {
 
 
 @media screen and (max-width: 960px) {
+  header {
+    font-size: 18px;
+  }
+
   .title {
     font-size: 48px;
   }
@@ -318,35 +323,22 @@ footer {
     height: 160px;
     width: 160px;
     font-size: 35px;
-    margin-left: 100px;
   }
 
-  .enjoy {
+  .book {
+    margin-right: 40px;
   }
 
   .subtitle {
     font-size: 32px;
   }
 
-  .drink {
-  }
-
   .drink li {
     margin-left: 50px;
   }
 
-
-  .drink li:first-child {
-  }
-
-  .food {
-  }
-
   .food li {
     margin-left: 50px;
-  }
-
-  .food li:first-child {
   }
 
   .menu img {
@@ -355,15 +347,17 @@ footer {
     margin-top: 24px;
   }
 
-
-  .flash:hover {
+  .message .form {
+    flex-direction: column;
+    margin: 20px 0;
   }
 
-  @keyframes flash {
+  .message {
+    padding: 30px 0 15px;
   }
 
-  .menu p {
+  .form-left {
+    margin: 20px 0;
   }
-
 
 }
