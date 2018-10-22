@@ -69,7 +69,7 @@ header {
   text-shadow: #B39B9B 2px 2px 0px;
   position: relative;
   z-index: 3;
-  animation: anime1 1s ease;
+  animation: anime1 3s ease;
   display: block;
 }
 
@@ -197,7 +197,7 @@ header {
   display: grid;
   grid-template-areas: 'ft-left ft-right';
   grid-template-columns: 1fr 20%;
-  grid-gap: 3px;
+  grid-gap: 2px;
   margin: 3px 0;
   font-family: 'Dancing Script', cursive;
 }
@@ -257,7 +257,7 @@ header {
   padding: 10px 30px;
   font-size: 20px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 50px;
   transition-duration: 800ms;
   cursor: pointer;
 }
@@ -284,7 +284,7 @@ header {
 }
 
 .sns i {
-  color: #fff0f8;
+  color: #fff;
   margin-bottom: 5px;
 }
 
