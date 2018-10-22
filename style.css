@@ -277,7 +277,12 @@ header {
   text-align: center;
 }
 
-.sns p {
+.font-awesome {
+  display: flex;
+  flex-direction: column;
+}
+
+.sns span {
   font-size: 30px;
   color: #fff;
   text-shadow: #B39B9B 2px 2px 0px;
@@ -287,6 +292,11 @@ header {
 .sns i {
   color: #fff;
   margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sns i:hover {
+  color: #D49E9E
 }
 
 footer {
@@ -311,10 +321,6 @@ footer {
 
 
 @media screen and (max-width: 960px) {
-  header {
-    font-size: 18px;
-  }
-
   .title {
     font-size: 48px;
   }
@@ -358,6 +364,84 @@ footer {
 
   .form-left {
     margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-right {
+    display: none;  
+  }
+
+  .btn-group {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 30px;
+    border-radius: 30px;
+    margin-right: 0;
+  }
+
+  .book {
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+
+  .drink {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .drink li {
+    margin-left: 0;
+  }
+
+  .food {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food li {
+    margin-left: 0;
+  }
+
+  .menu p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .contact {
+    grid-template-areas: 'ft-left'
+                         'ft-right';
+    grid-template-columns: 100% 100%;
+  }
+
+  .send {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .font-awesome {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: initial;
+  }
+
+  .sns i {
+    margin-bottom: 18px;
+  }
+
+  footer {
+    font-size: 16px;
   }
 
 }
