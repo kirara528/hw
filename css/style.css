@@ -86,7 +86,6 @@ header {
 
 .btn-group {
   margin-top: 100px;
-  display: inline-flex;
 }
 
 .btn {
@@ -115,9 +114,6 @@ header {
 .gift {
   background-color: rgba(203, 183, 248, .5);
   border-color: rgba(203, 183, 248, .5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .gift:hover {
