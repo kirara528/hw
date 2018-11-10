@@ -69,11 +69,11 @@ header {
   text-shadow: #B39B9B 2px 2px 0px;
   position: relative;
   z-index: 3;
-  animation: anime1 3s ease;
+  /*animation: anime1 3s ease;*/
   display: block;
 }
 
-@keyframes anime1 {
+/*@keyframes anime1 {
   0% {
     opacity: 0;
     top: 50px;
@@ -82,7 +82,7 @@ header {
     opacity: 1;
     top: 0;
   }
-}
+}*/
 
 .btn-group {
   margin-top: 100px;
@@ -322,6 +322,85 @@ footer {
 .footer-left li:last-child {
   border: none;
 }
+
+/*modal*/
+
+#modal-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 100;
+}
+
+.modal-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 600px;
+  margin-top: -200px;
+  margin-left: -300px;
+  background-color: #233142;
+  color: #fff;
+  padding: 20px; 
+  box-sizing: border-box;
+  z-index: 101;
+}
+.modal-close {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30px;
+}
+
+.modal-close span {
+  cursor: pointer;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-form input {
+  margin: 10px;
+  height: 36px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+/*.modal-form input .font-awesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*text-decoration: inherit;
+}
+*/
+
+
+.modal-book {
+  height: 40px;
+  width: 150px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 960px) {

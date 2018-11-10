@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="../reset.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-
   <link rel="icon" href="icon_054900_256.png" type="image/png" sizes="16x16 24x24 32x32 48x48 64x64">
+  <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -31,7 +31,7 @@
       <h1 class="title">Start your day with the BEST COFFEE?</h1>
   
       <div class="btn-group">
-        <button class="btn book">Book Now</button>
+        <button class="btn book js-book">Book Now</button>
         <a href="file:///C:/Users/PCUser/Desktop/HTML.CSS/HW/index2.html" style="text-decoration:none " type="button" class="btn gift">Menu</a>
       </div>
     </div>
@@ -119,6 +119,40 @@
     </ul>
 
   </footer>
+
+  <!-- モーダル -->
+  <div class="modal-content">
+    <div class="modal-close">
+      <span class="js-modal-close">x</span>
+    </div>
+
+    <form action="" class="modal-form">
+
+
+      <span>Date:</span>
+      <input type="text" id="datepicker" class="font-awesome date">
+      
+      
+      <span>Number of Guests:</span>
+      <input type="text" class="font-awesome party-size">
+      
+      
+      <span>Name:</span>
+      <input type="text" name="name">
+      
+      
+      <button id="js-modal-form-btn" class="modal-book">Find a Table</button>
+    </form>
+  </div>
+
+ <!-- 背景 -->
+  <div id="modal-bg" class="js-modal-close"></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
 
