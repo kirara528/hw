@@ -73,6 +73,16 @@ header {
   display: block;
 }
 
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 /*@keyframes anime1 {
   0% {
     opacity: 0;
@@ -341,13 +351,12 @@ footer {
   position: fixed;
   top: 50%;
   left: 50%;
-  height: 400px;
+  height: 350px;
   width: 600px;
-  margin-top: -200px;
+  margin-top: -175px;
   margin-left: -300px;
   background-color: #233142;
-  color: #fff;
-  padding: 20px; 
+  color: #fff; 
   box-sizing: border-box;
   z-index: 101;
 }
@@ -355,6 +364,7 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   font-size: 30px;
+  margin-right: 10px;
 }
 
 .modal-close span {
@@ -373,8 +383,24 @@ footer {
   height: 36px;
   width: 250px;
   border-radius: 5px;
+  font-size: 20px;
 }
 
+.modal-book {
+  color: #233142;
+  border-color: #5c848e;
+  background-color: #fff;
+  border-radius: 40px;
+  border-color: #decdc3;
+  margin-top: 30px;
+  padding: 5px 20px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/*.modal-book:hover {
+  background-color: #233142;
+}*/
 /*.modal-form input .font-awesome {
   display: inline-block;
   font-family: FontAwesome;
@@ -386,17 +412,6 @@ footer {
   /*text-decoration: inherit;
 }
 */
-
-
-.modal-book {
-  height: 40px;
-  width: 150px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-
-
 
 
 
